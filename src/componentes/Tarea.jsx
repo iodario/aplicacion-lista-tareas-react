@@ -1,4 +1,5 @@
 import React from 'react';
+import '../estilos/Tarea.css'
 
 function Tarea({ texto }) {
     return (
@@ -12,5 +13,6 @@ function Tarea({ texto }) {
         </div>
     )
 }
+
 
 export default Tarea;
