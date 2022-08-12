@@ -1,5 +1,5 @@
 import './App.css'
-import freecodecamplogguito from './imagenes/freecodecamp-logo.png'
+import logguito from './imagenes/marca-dario.png'
 import Tarea from './componentes/Tarea'
 import TareaFormulario from './componentes/TareaFormulario'
 
@@ -8,7 +8,7 @@ function App() {
    return (
       <div className="aplicacion-tareas">
          <div className="freecodecamp-logo-contenedor">
-            <img src={freecodecamplogguito}
+            <img src={logguito}
                alt="freecodecamp logo"
                className="freecodecamp-logo" />
          </div>

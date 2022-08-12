@@ -41,8 +41,10 @@ h1{
 }
 
 .freecodecamp-logo{
-  width:400px;
-  height:50px;
+  width:266px;
+  height:92px;
+  border-radius: 20px;
+  fill-opacity: 0.2;
 }
 
 
