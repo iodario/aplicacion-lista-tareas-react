@@ -1,7 +1,8 @@
 import './App.css'
 import logguito from './imagenes/marca-dario.png'
-import Tarea from './componentes/Tarea'
-import TareaFormulario from './componentes/TareaFormulario'
+// import Tarea from './componentes/Tarea'
+// import TareaFormulario from './componentes/TareaFormulario'
+import ListaDeTareas from './componentes/ListaDeTareas'
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
          </div>
          <div className="tareas-lista-principal">
             <h1>Mis Tareas</h1>
-            <Tarea texto='Aprender React' />
-            <TareaFormulario className="tarea-formulario"/>
+            {/* <Tarea texto='Aprender React' />
+            <TareaFormulario className="tarea-formulario"/> */}
+            <ListaDeTareas/>
          </div>
       </div>
    )
