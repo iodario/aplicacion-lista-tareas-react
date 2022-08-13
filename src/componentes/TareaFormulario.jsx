@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../estilos/TareaFormulario.css'
+import { v4 as uuidv4 } from 'uuid';
 
 //cuando el usuario esta escribiendo tenemos que manejar el cambio del formulario
 
@@ -17,11 +18,15 @@ function TareaFormulario(props) {
         e.preventDefault();
         console.log("Enviando formulario");
         const tareaNueva = {
-            id: '34545',
+            id: uuidv4(),    //libreria uuid, para generar id 
             texto: input,
             completada: false
         }
+        console.log(tareaNueva); //este objeto que genera es el que vamos a pasar al componente ListaDeTareas
+        props.onSubmit(tareaNueva); //agrega esa tareaNueva la lista de tareas del estado en el componente ListaDeTareas
     }
+
+    //queda en minuto 6:47:00---------------------------------------------------
 
     return (
         <form 

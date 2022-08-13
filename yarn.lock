@@ -812,6 +812,11 @@
     "escalade" "^3.1.1"
     "picocolors" "^1.0.0"
 
+"uuid@^8.3.2":
+  "integrity" "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz"
+  "version" "8.3.2"
+
 "vite-plugin-react-icons@^0.2.0":
   "integrity" "sha512-WIw0hIDibSckKmxJib31z+Jd3qX+PJ6MJtlviNyg4B++wTfMsmOGY7D+2iVMDCyZIfZPH2NwczzLYmC0U8W4Mg=="
   "resolved" "https://registry.npmjs.org/vite-plugin-react-icons/-/vite-plugin-react-icons-0.2.0.tgz"
