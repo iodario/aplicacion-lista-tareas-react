@@ -31,6 +31,9 @@ function ListaDeTareas() {
                 {
                     tareas.map((tarea) => // cada tarea se va a representar como un objeto en el arreglo tareas, y para cada uno de ellos vamos a crear un componente <Tarea/>
                         <Tarea
+                            //Warning: Each child in a list should have a unique "key" prop. https://reactjs.org/link/warning-keys 
+                            key = {tarea.id}
+                            id = {tarea.id}
                             texto={tarea.texto}
                             completada={tarea.completada}
                         />
