@@ -24,6 +24,21 @@ function ListaDeTareas() {
         }
     }
 
+    const eliminarTarea = id => {
+        const tareasFiltradas = tareas.filter(tarea => tarea.id !== id);
+        setTareas(tareasFiltradas);
+    } 
+
+    const completarTarea = id => {
+        const tareasModificadas = tareas.map(tarea => {
+            if ( tarea.id === id ){
+                tarea.completada = !tarea.completada;
+            }
+            return tarea;
+        });
+        setTareas(tareasModificadas);
+    }
+
     return (
         <>
             <TareaFormulario onSubmit={ agregarTarea } />
@@ -36,6 +51,8 @@ function ListaDeTareas() {
                             id = {tarea.id}
                             texto={tarea.texto}
                             completada={tarea.completada}
+                            eliminarTarea = { eliminarTarea }
+                            completarTarea = { completarTarea }
                         />
                     )
                 }
