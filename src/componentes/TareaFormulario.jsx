@@ -17,6 +17,7 @@ function TareaFormulario(props) {
     const manejarEnvio = e => {  //funcion que define que hacer ante el envio del formulario
         e.preventDefault();
         console.log("Enviando formulario");
+
         const tareaNueva = {
             id: uuidv4(),    //libreria uuid, para generar id 
             texto: input,
